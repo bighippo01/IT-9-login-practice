@@ -1,4 +1,5 @@
-body{
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
     margin: 0;
@@ -6,53 +7,106 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    
+    min-height: 100vh; 
 }
-.login-container{
+
+
+.login-container,
+.dashboard-container {
     background-color: white;
-    padding: 20px;
+    padding: 30px 40px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+    width: 100%;
+    max-width: 500px; 
+    box-sizing: border-box;
 }
-.login-form{
+
+
+.login-form {
     display: flex;
     flex-direction: column;
 }
-.input-group{
+
+.input-group {
     margin-bottom: 15px;
 }
-label{
+
+label {
     font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
 }
-input{
+
+input {
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
     width: 100%;
     box-sizing: border-box;
 }
-button{
-    padding: 8px;
+
+.login-form button {
+    padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: gray;
-    color: #020202;
+    background-color: #333333;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
 }
-button:hover{
-    background-color: #0056;
+
+.login-form button:hover {
+    background-color: #555555;
 }
 
-table{
-    border: 2px;
-    border-color: black;
 
+.dashboard-container h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #000000;
 }
-th,tr{
+
+.dashboard-container p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+}
+th {
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #777777;
+    text-align: center;
+}
+
+td {
+    color: #000000; 
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+.logout-container {
+    text-align: center;
+}
+
+.logout-container a {
     color: red;
+    text-decoration: none;
+    font-size: 14px;
+}
 
-
-
+.logout-container a:hover {
+    text-decoration: underline;
 }
