@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
 
-    <title>Login</title>
-
+    <!-- Connect CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <div class="login-container">
+    <div class="form-container">
 
-        <form class="login-form" action="dashboard.html">
+        <h1>Create Account</h1>
 
-            <h2>Login</h2>
+        <form action="#" class="login-form">
 
             <div class="input-group">
                 <label for="username">Username</label>
-
                 <input
                     type="text"
                     id="username"
-                    name="username"
+                    name="Username"
                     placeholder="Enter your username"
                     required
                 >
@@ -32,27 +30,36 @@
 
             <div class="input-group">
                 <label for="password">Password</label>
-
                 <input
                     type="password"
                     id="password"
-                    name="password"
+                    name="Password"
                     placeholder="Enter your password"
                     required
                 >
             </div>
 
-            <button type="submit">Login</button>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    name="ConfirmPassword"
+                    placeholder="Confirm your password"
+                    required
+                >
+            </div>
+
+            <button type="submit">Register</button>
 
         </form>
 
-        <div>
-            Don't have an account?
-            <a href="register.html">Register Here</a>
+        <div class="auth-footer">
+            Already have an account?
+            <a href="Login.html">Login here</a>
         </div>
 
     </div>
 
 </body>
-
 </html>
